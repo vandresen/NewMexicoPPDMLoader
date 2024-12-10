@@ -35,7 +35,7 @@ jobs:
       - name: Create Release
         uses: ncipollo/release-action@v1
         with:
-            artifacts: D:\a\NewMexicoPPDMLoader\NewPPDMLoader\output\NewMexicoPPDMLoader.exe
+            artifacts: D:\a\NewMexicoPPDMLoader\NewMexicoPPDMLoader\output\NewMexicoPPDMLoader.exe
             token: ${{ secrets.GITHUB_TOKEN }}
             tag: v${{ github.event.inputs.versionNumber }}
             name: Release V${{ github.event.inputs.versionNumber }}
